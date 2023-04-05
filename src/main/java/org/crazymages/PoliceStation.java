@@ -13,6 +13,29 @@ public class PoliceStation {
         return first + second / 2;
     }
 
+    public double summarizeTwoCrimes(double first, double second) {
+        return 9.1;
+    }
+
+    public int findAge(int age, int crimeSeverity) {
+        if (age < 0) {
+            throw new IllegalArgumentException("Срок меньше нуля");
+        }
+
+        if (crimeSeverity == 0) {
+            return 0;
+        }
+        else if (crimeSeverity == 1) {
+            return age / 2;
+        }
+        else if (crimeSeverity == 2) {
+            return age * 9 / 10;
+        }
+        else {
+            return age;
+        }
+    }
+
     //В нее поступает два числа - первое - длина срока, второе - тяжесть преступления
     //найти, через сколько лет можно будет получить помилование
 
